@@ -1,4 +1,4 @@
-![Alt text](Cover.png?raw=true 'It's Me')
+![Alt text](Cover.png?raw=true "Its Me")
 
 # It's Me
 
