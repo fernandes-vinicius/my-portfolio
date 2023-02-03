@@ -5,7 +5,7 @@ import { Container } from '@/app/components/Container'
 import { ContactForm } from './ContactForm'
 
 const PHONE_NUMBER = `+55 (84) 9 9995 4300`
-const EMAIL_ADDRESS = `viniciusfernandes6991@gmail.com`
+const EMAIL_ADDRESS = `vinicius.dev.contact@gmail.com`
 const SOCIAL_LINKS = [
   {
     href: 'https://github.com/fernandes-vinicius',
