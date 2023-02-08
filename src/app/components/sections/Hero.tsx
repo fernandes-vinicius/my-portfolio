@@ -4,7 +4,7 @@ import { TextLink } from '@/app/components/TextLink'
 
 export function Hero() {
   return (
-    <section id="hero" className="bg-blue-50 py-52">
+    <section id="hero" className="bg-blue-50 py-12 lg:py-52">
       <Container className="flex flex-col gap-5">
         <span className="text-indigo-900">Olá, meu nome é</span>
 

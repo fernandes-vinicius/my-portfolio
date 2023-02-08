@@ -17,10 +17,10 @@ export function About() {
             fill
           />
 
-          <div className="h-full">
+          <div className="h-full sm:p-5">
             <div
               className="relative flex h-full w-full items-center justify-center
-              bg-white p-5 rounded-2xl shadow-base -rotate-6"
+              bg-white p-5 rounded-2xl shadow-base md:-rotate-6"
             >
               <Image
                 className="object-cover rounded-2xl"
