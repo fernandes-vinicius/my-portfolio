@@ -15,12 +15,9 @@ export function Portfolio({ projects }: PortfolioProps) {
         <div className="flex flex-col gap-5 mb-5 lg:mb-0">
           <span className="text-indigo-600">Meus trabalhos</span>
 
-          <h4
-            className="text-indigo-900 text-3xl md:text-4xl lg:text-5xl
-            font-bold"
-          >
+          <h2 className="text-indigo-900">
             Veja alguns dos meus trabalhos mais recentes!
-          </h4>
+          </h2>
 
           <p>
             Um bom desenvolvedor deve priorizar por agilidade e segurança,

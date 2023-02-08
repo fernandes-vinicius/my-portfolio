@@ -1,13 +1,12 @@
 import React from 'react'
 import { Josefin_Sans as JosefinSans } from '@next/font/google'
 
-import { Footer } from '@/app/components/Footer'
+// import { Footer } from '@/app/components/Footer'
 
 import './globals.css'
 
 const josefinSans = JosefinSans({
   variable: '--font-josefin-sans',
-  display: 'optional',
   subsets: ['latin'],
 })
 
@@ -23,12 +22,9 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body
-        className="bg-white text-gray-500 w-screen h-screen antialiased 
-        overflow-x-hidden"
-      >
+      <body className="bg-white text-gray-500 w-screen h-screen">
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )

@@ -2,9 +2,10 @@ import { getProjects } from '@/services/get-projects'
 import { getSkills } from '@/services/get-skills'
 
 import { Hero } from '@/app/components/sections/Hero'
-import { Contact } from '@/app/components/sections/Contact'
-import { Portfolio } from '@/app/components/sections/Portfolio'
+import { About } from '@/app/components/sections/About'
 import { Skills } from '@/app/components/sections/Skills'
+import { Portfolio } from '@/app/components/sections/Portfolio'
+import { Contact } from '@/app/components/sections/Contact'
 
 export default async function Home() {
   const projectsData = getProjects()
@@ -15,6 +16,7 @@ export default async function Home() {
   return (
     <main>
       <Hero />
+      <About />
       <Skills skills={skills} />
       <Portfolio projects={projects} />
       <Contact />

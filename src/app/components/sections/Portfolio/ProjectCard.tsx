@@ -34,7 +34,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.name}
         </h4>
 
-        <div className="bg-white text-gray-900 py-2 px-3 rounded-lg shadow-base">
+        <div
+          className="bg-white text-gray-900 py-2 px-3 rounded-lg
+          shadow-base"
+        >
           {project.description}
         </div>
       </div>

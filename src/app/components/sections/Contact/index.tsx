@@ -1,8 +1,7 @@
-import Image from 'next/image'
-
 import { Container } from '@/app/components/Container'
 
 import { ContactForm } from './ContactForm'
+import { SocialLink } from './SocialLink'
 
 const PHONE_NUMBER = `+55 (84) 9 9995 4300`
 const EMAIL_ADDRESS = `vinicius.dev.contact@gmail.com`
@@ -36,13 +35,10 @@ export function Contact() {
         <div className="flex flex-col gap-5 w-full">
           <span className="text-indigo-600">Entre em contato</span>
 
-          <h4
-            className="text-indigo-900 text-3xl md:text-4xl lg:text-5xl 
-            font-bold"
-          >
+          <h2 className="text-indigo-900">
             Gostou do meu trabalho? <br className="hidden lg:block" /> Por
             favor, deixe uma mensagem
-          </h4>
+          </h2>
 
           <p>
             Entre em contato e me diga como posso ajudar. Preencha o formulário
@@ -61,18 +57,9 @@ export function Contact() {
           </div>
 
           <div className="flex items-center gap-5">
-            {SOCIAL_LINKS.map((socialLink) => {
+            {SOCIAL_LINKS.map((link) => {
               return (
-                <a
-                  key={socialLink.href}
-                  href={socialLink.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-white w-12 h-12 flex items-center justify-center
-                  rounded-full cursor-pointer shadow-base hover:scale-105"
-                >
-                  <Image src={socialLink.icon} width={20} height={20} alt="" />
-                </a>
+                <SocialLink key={link.href} href={link.href} icon={link.icon} />
               )
             })}
           </div>

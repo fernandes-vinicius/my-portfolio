@@ -16,12 +16,9 @@ export function Skills({ skills }: SkillsProps) {
         <div className="flex flex-col gap-5">
           <span className="text-indigo-600">Minhas skills</span>
 
-          <h4
-            className="text-indigo-900 text-3xl md:text-4xl lg:text-5xl
-            font-bold"
-          >
+          <h2 className="text-indigo-900">
             O que minhas habilidades com programação incluem?
-          </h4>
+          </h2>
 
           <p>
             Desenvolvo uma interface de usuário simples, intuitiva e responsiva
